@@ -83,3 +83,26 @@ Console.Write("Введите десятичное число, которое х
 int number = Convert.ToInt32(Console.ReadLine());
 string binary = GenerateArrayFromNumber(number);
 Console.Write($"{number} -> {binary}");
+
+// Вариант, как решили на семинаре:
+
+// void DoBoolean(int number)
+// {
+//     Console.Write(number + " -> ");
+//     string text = String.Empty;
+//     while (number > 0)
+//     {
+//         if (number % 2 == 1) text = "1" + text;
+//         else text = "0" + text;
+//         number / 2;
+//     }
+// }
+
+// int GetInput (string text)
+// {
+//     Console.Write(text);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
+
+// int number = GetInput("Введите число: ");
+// DoBoolean(number);
